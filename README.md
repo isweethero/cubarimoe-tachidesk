@@ -1,8 +1,11 @@
-# Cubari.moe
+# Cubari.moe - Tachidesk
 An image proxy powered by the Cubari reader.
 
 Testing Supported By<br/>
 <img width="160" src="http://foundation.zurb.com/sites/docs/assets/img/logos/browser-stack.svg" alt="BrowserStack"/>
+
+## About this fork
+Trying to implement Tachidesk into Cubari. This was done by creating a new proxy source (used a existing imgbox one for the base) and poiting the Tachidesk API to it. Not all Tachidesk API endpoints are mapped, but basic reading should work.
 
 ## Prerequisites 
 - git
@@ -18,7 +21,7 @@ virtualenv ~/cubarimoe
 
 2. Clone cubarimoe's source code into the venv.
 ```
-git clone https://github.com/appu1232/cubarimoe ~/cubarimoe/app
+git clone -b develop https://github.com/isweethero/cubarimoe-tachidesk ~/cubarimoe/app
 ```
 
 3. Activate the venv.
@@ -48,6 +51,8 @@ python3 manage.py createsuperuser
 
 ## Start the server
 -  `python3 manage.py runserver` - keep this console active
+- or
+-  `python3 manage.py runserver localIP:port` - to expose to lan
 
 Now the site should be accessible on localhost:8000
 
