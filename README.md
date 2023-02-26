@@ -7,6 +7,16 @@ Testing Supported By<br/>
 ## About this fork
 Trying to implement Tachidesk into Cubari. This was done by creating a new proxy source (used a existing imgbox one for the base) and poiting the Tachidesk API to it. Not all Tachidesk API endpoints are mapped, but basic reading should work.
 
+## Usage
+In the link bar:
+```
+tachidesk:{http://serverIP:port}/manga/{number}/
+```
+Example:
+```
+tachidesk:http://192.168.1.172:4567/manga/7/
+```
+
 ## Prerequisites 
 - git
 - python 3.6.5+
