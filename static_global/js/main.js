@@ -31,6 +31,7 @@ let error = '';
 			result = /(\/?)(\b[0-9]+\b)/.exec(text);
 			console.log(result)
 			if(!result || !result[2]) return message('Reader could not understand the given link.', 1)
+			//alert(result);
 			result = '/read/nhentai/' + result[2];
 			break;
 		case (/mangadex\.org\/title/.test(text)):
@@ -53,6 +54,12 @@ let error = '';
 			if (!result || !result[1]) return message('Reader could not understand the given link.', 1);
 			result = '/read/reddit/' + result[1];
 			break;
+		case /tachidesk/.test(text):
+			result = /(?:tachidesk:http:\/\/(\d+.+))/.exec(text);
+			//alert(result[1].replaceAll(".","d").replaceAll(":","p").replaceAll("/","s"));
+			result = '/read/tachidesk/' + result[1].replaceAll(".","d").replaceAll(":","p").replaceAll("/","s")
+			break;
+
 		default:
 			return message('Reader could not understand the given link.', 1)
 			break;

@@ -161,6 +161,7 @@ HOME_BRANDING_NAME = "Cubari"
 HOME_BRANDING_DESCRIPTION = BRANDING_DESCRIPTION
 HOME_BRANDING_IMAGE_URL = "/static/cubari_logo.png"
 
-EXTERNAL_PROXY_URL = "https://services.f-ck.me"
+# EXTERNAL_PROXY_URL = "https://services.f-ck.me"
+EXTERNAL_PROXY_URL = ""
 
 PROXY_BASE_PATH = "read"

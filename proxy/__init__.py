@@ -16,6 +16,8 @@ from .sources.reddit import Reddit
 from .sources.mangadventure import MangAdventure
 from .sources.dynasty import Dynasty
 
+from .sources.tachidesk import Tachidesk
+
 sources = [
     MangaDex(),
     NHentai(),
@@ -31,5 +33,6 @@ sources = [
     Imgbox(),
     Reddit(),
     Imgbb(),
-    Dynasty()
+    Dynasty(),
+    Tachidesk()
 ]

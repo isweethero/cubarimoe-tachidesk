@@ -7,7 +7,9 @@ CANONICAL_ROOT_DOMAIN = "localhost:8000"
 
 DEBUG = True
 
-ALLOWED_HOSTS = [os.environ.get("ALLOWED_HOSTS", "localhost"), "kagu.algoinde.ru"]
+# ALLOWED_HOSTS = [os.environ.get("ALLOWED_HOSTS", "localhost"), "kagu.algoinde.ru"]
+
+ALLOWED_HOSTS = ["*"]
 
 
 CACHES = {
