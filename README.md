@@ -5,7 +5,7 @@ Testing Supported By<br/>
 <img width="160" src="http://foundation.zurb.com/sites/docs/assets/img/logos/browser-stack.svg" alt="BrowserStack"/>
 
 ## About this fork
-Trying to implement Tachidesk into Cubari. This was done by creating a new proxy source (used a existing imgbox one for the base) and poiting the Tachidesk API to it. Not all Tachidesk API endpoints are mapped, but basic reading should work.
+Trying to implement the Cubari Viewer. This was done by creating a new proxy source (used a existing imgbox one for the base) and pointing the Tachidesk API to it. Not all Tachidesk API endpoints are mapped, but basic reading should work.
 
 ## Usage
 In the link bar:
